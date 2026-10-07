@@ -1,0 +1,64 @@
+# include <stdio.h>
+int main()
+{
+int choice;
+float num1, num2, result;
+do
+{
+	printf("*********Menu Driven Calculator*********");
+	printf("1.Addition\n");
+	printf("2.Subtraction\n");
+	printf("3.Multiplication\n");
+	printf("4.Division\n");
+	printf("5.Exist\n");
+	printf("Enter your choice(1-5) : \n");
+	scanf("%d\n", &choice);
+	
+	if(choice==5)
+	{
+		printf("Existing the calculator, Good Bye!\n");
+		break;
+	}
+	
+	if(choice>=1 && choice <=4)
+	{
+		printf("Enter two numbers : \n");
+		scanf("%f %f",&num1, &num2);
+	}
+	
+	else
+	{
+		printf("Invalid Choise, please try again.\n");
+		continue;
+	}
+	
+	switch(choice)
+	{
+		case 1:
+			result=num1+num2;
+			printf("Result: %2f+%2f=%2f\n", num1, num2, result);
+			break;
+		case 2:
+			result=num1-num2;
+			printf("Result: %2f-%2f=%2f\n", num1, num2, result);
+			break;
+		case 3:
+			result=num1*num2;
+			printf("Result: %2f*%2f=%2f\n", num1, num2, result);
+			break;
+		case 4:if(num2!=0)
+			{
+			result=num1/num2;
+			printf("Result: %2f/%2f=%2f\n", num1, num2, result);
+			}
+	else
+	{
+		printf("Error:Divisible by zero is not possible");
+	}
+	break;
+}
+}
+while(choice !=5);
+return 0;
+}
+
