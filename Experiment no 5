@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main()
+{
+//This is single line comment
+//It explain that the program prints a welcome message
+/*This is multiple line comment.
+It can span across srveral lines.
+Here, we decelare a variable and print its value*/
+int num=12;//single line comment:decelaration and initializing a variable
+printf("The value of number is:%d\n ",num);
+/*End of program.
+Comment do not afffect program execution;
+they are purely for documentation purpose.*/
+return 0;
+}
