@@ -19,12 +19,14 @@ int main()
  }
  // Input character array
  printf("Enter 5 characters: ");
- for (i = 0; i < 5; i++) {
- scanf(" %c", &charArr[i]); MIT ADT University, Pune
+ for (i = 0; i < 5; i++)
+ {
+ scanf(" %c", &charArr[i]);
  }
  // Display integer array values and addresses
  printf("\nInteger Array:\n");
- for (i = 0; i < 5; i++) {
+ for (i = 0; i < 5; i++) 
+{
  printf("Value = %d\tAddress = %p\n", intArr[i], (void*)&intArr[i]);
  }
  // Display float array values and addresses
